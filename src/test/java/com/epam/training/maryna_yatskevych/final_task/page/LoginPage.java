@@ -6,11 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-
 public class LoginPage extends BasePage
 {
 
-    private final String PAGE_URL = "https://www.saucedemo.com";
+    private static final String PAGE_URL = "https://www.saucedemo.com";
 
     @FindBy(xpath = "//input[@id = 'user-name']")
     private WebElement usernameField;

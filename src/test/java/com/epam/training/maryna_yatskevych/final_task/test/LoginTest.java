@@ -47,7 +47,6 @@ public class LoginTest extends CommonConditions{
         loginPage.clearFields();
         logger.info("Clear all input fields.");
 
-        // loginPage.clearFields();
         assertTrue(loginPage.isUsernameFieldEmpty(), "Username field is not empty");
         assertTrue(loginPage.isPasswordFieldEmpty(), "Password field is not empty");
 
@@ -119,9 +118,9 @@ public class LoginTest extends CommonConditions{
                 Arguments.of(User.standardUser()),
                 Arguments.of(User.lockedOutUser()),
                 Arguments.of(User.problemUser()),
-                Arguments.of(User.performance_glitch_user()),
-                Arguments.of(User.error_user()),
-                Arguments.of(User.visual_user())
+                Arguments.of(User.performanceGlitchUser()),
+                Arguments.of(User.errorUser()),
+                Arguments.of(User.visualUser())
         );
     }
     @AfterEach

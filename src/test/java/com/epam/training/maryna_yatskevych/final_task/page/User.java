@@ -3,29 +3,25 @@ package com.epam.training.maryna_yatskevych.final_task.page;
 public class User {
     private final String username;
     private final String password;
+
     public static User standardUser() {
         return new User.Builder().withUsername("standard_user").build();
     }
-
     public static User lockedOutUser() {
         return new User.Builder().withUsername("locked_out_user").build();
     }
-
     public static User problemUser() {
         return new User.Builder().withUsername("problem_user").build();
     }
-
-    public static User performance_glitch_user() {
+    public static User performanceGlitchUser() {
         return new User.Builder().withUsername("performance_glitch_user").build();
     }
-
-    public static User error_user() {
+    public static User errorUser() {
         return new User.Builder().withUsername("error_user").build();
     }
-    public static User visual_user() {
+    public static User visualUser() {
         return new User.Builder().withUsername("visual_user").build();
     }
-
     private User(Builder builder) {
         this.username = builder.username;
         this.password = builder.password;

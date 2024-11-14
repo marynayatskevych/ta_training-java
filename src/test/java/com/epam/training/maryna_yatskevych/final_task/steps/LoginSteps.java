@@ -80,11 +80,11 @@ public class LoginSteps extends CommonConditions {
             case "problem_user":
                 return User.problemUser();
             case "performance_glitch_user":
-                return User.performance_glitch_user();
+                return User.performanceGlitchUser();
             case "error_user":
-                return User.error_user();
+                return User.errorUser();
             case "visual_user":
-                return User.visual_user();
+                return User.visualUser();
             default:
                 throw new IllegalArgumentException("Unknown user type: " + userType);
         }
