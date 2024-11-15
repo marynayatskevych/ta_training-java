@@ -52,16 +52,16 @@ public class LoginPage extends BasePage
 
     public void clearFields() {
         usernameField.click();
-        usernameField.sendKeys(Keys.CONTROL + "a");
+        usernameField.sendKeys(Keys.COMMAND + "a");
         usernameField.sendKeys(Keys.DELETE);
 
         passwordField.click();
-        passwordField.sendKeys(Keys.CONTROL + "a");
+        passwordField.sendKeys(Keys.COMMAND + "a");
         passwordField.sendKeys(Keys.DELETE);
     }
     public void clearPasswordField() {
         passwordField.click();
-        passwordField.sendKeys(Keys.CONTROL + "a");
+        passwordField.sendKeys(Keys.COMMAND + "a");
         passwordField.sendKeys(Keys.DELETE);
     }
 
